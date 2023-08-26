@@ -1,5 +1,3 @@
-Sure, here's a clear and concise documentation on how to run the task management application locally:
-
 ---
 
 ## Task Management Web Application - Local Setup Guide
