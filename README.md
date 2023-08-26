@@ -19,7 +19,7 @@ Before you begin, make sure you have the following software installed on your sy
    Clone the repository to your local machine using Git:
 
    ```bash
-   git clone https://github.com/your-username/task-management-app.git
+   git clone https://github.com/Smahesh05/task-management-app.git
    ```
 
    Navigate to the project directory:
