@@ -24,17 +24,19 @@ const Login = () => {
       <h2>Welcome to Task Management App</h2>
       {error && <Alert variant="danger">{error}</Alert>}
       <Form.Group className="mb-2">
-        <Form.Label>Login</Form.Label>
+        <Form.Label htmlFor="email">Email</Form.Label>
         <Form.Control
           type="email"
           value={email}
+          id="email"
           onChange={(e) => setEmail(e.target.value)}
         />
       </Form.Group>
       <Form.Group className="mb-2">
-        <Form.Label>Password</Form.Label>
+        <Form.Label htmlFor="password">Password</Form.Label>
         <Form.Control
           type="password"
+          id="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />

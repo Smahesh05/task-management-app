@@ -1,11 +1,13 @@
 import React, { useContext, useState } from "react";
 import { Button, Form } from "react-bootstrap";
+
 import { TaskContext } from "../TaskContext";
 
-const TaskForm = () => {
+const TaskForm = ({ closeModal }) => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [error, setError] = useState("");
+
   const { addTask } = useContext(TaskContext);
 
   const handleSubmit = async (e) => {
@@ -27,6 +29,7 @@ const TaskForm = () => {
       setTitle("");
       setDescription("");
       setError("");
+      closeModal();
     } catch (err) {
       if (err.response && err.response.data.error) {
         setError(err.response.data.error);

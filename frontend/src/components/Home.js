@@ -16,6 +16,10 @@ const Home = () => {
     setShowModal(true);
   };
 
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <>
       <header className="bg bg-light">
@@ -30,10 +34,10 @@ const Home = () => {
         </div>
       </header>
 
-      <Modal show={showModal} onHide={() => setShowModal(false)}>
+      <Modal show={showModal} onHide={closeModal}>
         <Modal.Header>Add new Task</Modal.Header>
         <Modal.Body>
-          <TaskForm />
+          <TaskForm closeModal={closeModal} />
         </Modal.Body>
       </Modal>
       <TaskList />

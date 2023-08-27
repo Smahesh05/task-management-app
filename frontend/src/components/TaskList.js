@@ -14,7 +14,7 @@ const TaskList = () => {
     markAsCompleted(taskId);
   };
 
-  const handleDeleteTask = (taskId) => {
+  const deleteTask = (taskId) => {
     deleteTaskById(taskId);
   };
 
@@ -62,8 +62,9 @@ const TaskList = () => {
               <Button
                 variant="danger"
                 size="sm"
-                onClick={() => handleDeleteTask(task._id)}
                 className="ml-2"
+                data-testid="delete-btn"
+                onClick={() => deleteTask(task._id)}
               >
                 Delete
               </Button>
