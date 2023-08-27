@@ -1,7 +1,7 @@
 const express = require("express");
 const port = process.env.PORT || 5000;
 const taskRoutes = require("./routes/taskRoute");
-const dotenv = require("dotenv").config();
+require("dotenv").config();
 const connectDB = require("./config/db");
 const bodyparser = require("body-parser");
 const cors = require("cors");
