@@ -125,7 +125,7 @@ To stop the application:
 
 Congratulations! You have successfully set up and run the Task Management Web Application locally. Feel free to explore the features and functionalities of the application.
 
-For more information or troubleshooting, refer to the project's documentation or consult the project maintainers.
+For more information or troubleshooting, refer to the project's documentation.
 
 ---
 
