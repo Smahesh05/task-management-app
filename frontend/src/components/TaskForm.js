@@ -30,6 +30,9 @@ const TaskForm = ({ closeModal }) => {
       setDescription("");
       setError("");
       closeModal();
+      setTimeout(() => {
+        alert("added successfully");
+      }, 0);
     } catch (err) {
       if (err.response && err.response.data.error) {
         setError(err.response.data.error);

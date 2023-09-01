@@ -2,7 +2,7 @@ import { createContext, useEffect, useState } from "react";
 
 export const TaskContext = createContext();
 
-const BASE_URL = "http://localhost:5000/api/tasks";
+const BASE_URL = "https://react-task-crud-app.onrender.com/api/tasks";
 
 export function TaskProvider({ children }) {
   const [tasks, setTasks] = useState([]);
